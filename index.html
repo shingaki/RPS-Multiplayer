@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+
+    <!-- My css files-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container text-center">
+    <div class="jumbotron">
+        <h1 class="header-4">Rock Paper Scissors</h1>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row text-left">
+        <form id="player">
+            <label for="player-name-input" id="player-name-label">Enter Your Name</label><br>
+            <input type="input" name="player-name-input" value="" id="player-name-input"><br><br>
+            <input id="set-player-button" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="./assets/images/rock.png" id="rock">
+        </div>
+
+        <div class="col-md-4">
+            <img src="./assets/images/paper.png" id="paper">
+        </div>
+
+        <div class="col-md-4">
+            <img src="./assets/images/scissors.png" id="scissors">
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row text-left" id="score">
+        <div class="col-md-1">Wins: </div>
+        <div class="col-md-3" id="wins-count">12</div>
+        <div class="col-md-1 ">Losses: </div>
+        <div class="col-md-3" id="losses">0</div>
+    </div>
+</div>
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+</html>
