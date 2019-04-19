@@ -1,2 +1,2 @@
-# rps
-RockPaperScissors
+# RPS-Multiplayer
+RPS-Multiplayer
