@@ -125,6 +125,13 @@ connectionsRef.on("value", function (snap) {
             playerTwoLosses: 0
         });
     }
-});
+})
 
 
+$(document).ready(function() {
+    $("#player-images").addClass("tohide");
+    $("#score-one").addClass("tohide");
+    $("#score-two").addClass("tohide");
+
+
+})

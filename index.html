@@ -30,29 +30,42 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row text-center">
-        <div class="col-md-4">
-            <img src="./assets/images/rock.png" id="rock">
+<div class="container hidden">
+    <div class="row text-center" id="player-images">
+        <div class="col-md-4"  id="rock">
+            <img class="hidden" src="./assets/images/rock.png">
         </div>
 
-        <div class="col-md-4">
-            <img src="./assets/images/paper.png" id="paper">
+        <div class="col-md-4" id="paper">
+            <img src="./assets/images/paper.png">
         </div>
 
-        <div class="col-md-4">
-            <img src="./assets/images/scissors.png" id="scissors">
+        <div class="col-md-4" id="scissors">
+            <img src="./assets/images/scissors.png">
         </div>
-
     </div>
 </div>
 
 <div class="container">
-    <div class="row text-left" id="score">
+    <div class="row text-left" id="score-one">
+        <div class="col-md-2">Player One:</div>
+        <div class="col-md-1" id="player-one-name"></div>
         <div class="col-md-1">Wins: </div>
-        <div class="col-md-3" id="wins-count">12</div>
+        <div class="col-md-1" id="wins-one-count">12</div>
         <div class="col-md-1 ">Losses: </div>
-        <div class="col-md-3" id="losses">0</div>
+        <div class="col-md-1" id="losses-one-count">0</div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row text-left" id="score-two">
+        <div class="col-md-2">Player Two:</div>
+        <div class="col-md-1" id="player-two-name"></div>
+        <div class="col-md-1">Wins: </div>
+        <div class="col-md-1" id="wins-two-count">12</div>
+        <div class="col-md-1 ">Losses: </div>
+        <div class="col-md-1" id="losses-two-count">0</div>
     </div>
 </div>
 

@@ -1,0 +1,7 @@
+.tohide {
+    visibility: hidden;
+}
+
+.toshow {
+    visibility: visible;
+}
