@@ -58,7 +58,7 @@ connectedRef.on("value", function (snap) {
 
 });
 
-// see if players information exists in the database
+// ss if the database was updated
 database.ref("/playerData").on("value", function (snapshot) {
     myRPSGame = snapshot.val();
 
@@ -73,10 +73,10 @@ database.ref("/playerData").on("value", function (snapshot) {
         imagesShowing = true;
     }
 
-    $("#wins-one-count").replaceWith(myRPSGame.playerOneWins);
-    $("#losses-two-count").replaceWith(myRPSGame.playerOneWins);
-    $("#wins-two-count").replaceWith(myRPSGame.playerTwoWins);
-    $("#losses-one-count").replaceWith(myRPSGame.playerTwoWins);
+    $("#wins-one-count").text(snapshot.val().playerOneWins);
+    $("#losses-two-count").text(snapshot.val().playerOneWins);
+    $("#wins-two-count").text(snapshot.val().playerTwoWins);
+    $("#losses-one-count").text(snapshot.val().playerTwoWins);
 
 })
 
