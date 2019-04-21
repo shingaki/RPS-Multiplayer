@@ -64,25 +64,20 @@ database.ref("/playerData").on("value", function (snapshot) {
 
 
 // only need to show this once
-        if ((myRPSGame.playerOne != "") && (myRPSGame.playerTwo != "")
+    if ((myRPSGame.playerOne != "") && (myRPSGame.playerTwo != "")
         && (!imagesShowing)) {
-            console.log("show images");
-            $("#messages").empty();
-            showImages();
-            $("#player").addClass("toHide");
-            imagesShowing = true;
-        }
+        console.log("show images");
+        $("#messages").empty();
+        showImages();
+        $("#player").addClass("toHide");
+        imagesShowing = true;
+    }
 
+    $("#wins-one-count").replaceWith(myRPSGame.playerOneWins);
+    $("#losses-two-count").replaceWith(myRPSGame.playerOneWins);
+    $("#wins-two-count").replaceWith(myRPSGame.playerTwoWins);
+    $("#losses-one-count").replaceWith(myRPSGame.playerTwoWins);
 
-            $("#wins-one-count").replaceWith(myRPSGame.playerOneWins);
-            $("#losses-two-count").replaceWith(myRPSGame.playerOneWins);
-            $("#wins-two-count").replaceWith(myRPSGame.playerTwoWins);
-            $("#losses-one-count").replaceWith(myRPSGame.playerTwoWins);
-
-            //     winner = whoWon();
-            //     calculateWinsAndLosses(winner);
-            //
-            // }
 })
 
 
@@ -368,6 +363,7 @@ function calculateWinsAndLosses(winner) {
             playerOneLosses: playerTwoWinningCount
         });
     }
+    
 
 }
 
