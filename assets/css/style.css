@@ -1,7 +1,11 @@
-.tohide {
+.toHide {
     visibility: hidden;
 }
 
-.toshow {
+.toShow {
     visibility: visible;
+}
+
+.messages {
+    color: red;
 }

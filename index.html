@@ -25,15 +25,21 @@
         <form id="player">
             <label for="player-name-input" id="player-name-label">Enter Your Name</label><br>
             <input type="input" name="player-name-input" value="" id="player-name-input"><br><br>
-            <input id="set-player-button" type="submit" value="Submit">
+            <input id="set-player-button" type="submit" value="Submit"><br><br>
         </form>
     </div>
 </div>
 
-<div class="container hidden">
+
+<div class="container">
+    <div class="row text-center" id="messages"><br><br>
+    </div>
+</div>
+
+<div class="container" id="player-image">
     <div class="row text-center" id="player-images">
-        <div class="col-md-4"  id="rock">
-            <img class="hidden" src="./assets/images/rock.png">
+        <div class="col-md-4" id="rock">
+            <img src="./assets/images/rock.png">
         </div>
 
         <div class="col-md-4" id="paper">
@@ -48,24 +54,24 @@
 
 <div class="container">
     <div class="row text-left" id="score-one">
-        <div class="col-md-2">Player One:</div>
-        <div class="col-md-1" id="player-one-name"></div>
-        <div class="col-md-1">Wins: </div>
-        <div class="col-md-1" id="wins-one-count">12</div>
-        <div class="col-md-1 ">Losses: </div>
-        <div class="col-md-1" id="losses-one-count">0</div>
+        <div class="col-md-2 text-left">Player One:</div>
+        <div class="col-md-1 text-left" id="player-one-name"></div>
+        <div class="col-md-1 text-left">Wins:</div>
+        <div class="col-md-1 text-left" id="wins-one-count">0</div>
+        <div class="col-md-1 text-left">Losses:</div>
+        <div class="col-md-1 text-left" id="losses-one-count">0</div>
     </div>
 </div>
 
 
 <div class="container">
     <div class="row text-left" id="score-two">
-        <div class="col-md-2">Player Two:</div>
-        <div class="col-md-1" id="player-two-name"></div>
-        <div class="col-md-1">Wins: </div>
-        <div class="col-md-1" id="wins-two-count">12</div>
-        <div class="col-md-1 ">Losses: </div>
-        <div class="col-md-1" id="losses-two-count">0</div>
+        <div class="col-md-2 text-left">Player Two:</div>
+        <div class="col-md-1 text-left" id="player-two-name"></div>
+        <div class="col-md-1 text-left">Wins:</div>
+        <div class="col-md-1 text-left" id="wins-two-count">0</div>
+        <div class="col-md-1 text-left">Losses:</div>
+        <div class="col-md-1 text-left" id="losses-two-count">0</div>
     </div>
 </div>
 
